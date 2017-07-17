@@ -1,0 +1,198 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753;
+	margin: 0;
+	padding: 0;
+	}
+p {
+	margin-top: 0;
+	text-align: justify;
+    font-size: 14px;
+	}
+h3 {
+	font-family: Montserrat, sans-serif;
+    letter-spacing: 0.8em;
+    font-size: 22px;
+	}
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #B7A5DF;
+    font-size:14px;
+}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper {
+	margin: 0;
+	position: relative;
+	}
+
+.intro {
+	min-width: 470px;
+	width: 100%;
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+	}
+
+header h1 {
+	margin: 75px 0 45px 0;
+	display: block;
+    color: #fff;
+    font-size: 144px;
+    line-height: 165px;
+	}
+header h2 {
+    color: #b7fffe;
+    font-weight:300;
+	}
+
+header {
+	padding-top: 20px;
+    text-align: center;
+    max-width: 1040px;
+    margin:0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background: url(img/stars.png);
+    -webkit-animation: backgroundScroll 20s linear infinite;
+    animation: backgroundScroll 20s linear infinite;
+    }
+
+    @-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -400px 0;}
+    }
+
+    @keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -400px 0;}
+    }
+
+.summary {
+        color: #fff;
+        font-size: 14px;
+        padding-bottom: 40px;
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	}
+
+.preamble {
+	position: relative;
+    background-color: #5a8eee;
+    color: #fff;
+    max-width: 700px;
+    margin:0 auto;
+    margin-bottom: -180px;
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+    font-size: 14px;
+}
+
+.supporting {
+    background-image: url(img/home.jpg);
+    padding: 180px 100px 100px 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+	}
+
+.supporting h3{
+    letter-spacing: 0;
+}
+footer {
+	text-align: center;
+    flex: 1;
+	}
+footer a:link, footer a:visited {
+	margin-right: 20px;
+	}
+
+.sidebar .wrapper {
+    display: flex;
+	}
+.sidebar .wrapper div{
+    flex: 1;
+    padding: 75px;
+}
+.design-selection{
+    background-color: #f6f6f7;
+}
+.design-archives {
+    background-color: #0bd9fe;
+    color:#fff;
+}
+.zen-resources{
+    background-color: #0bb8fd;
+    color: #fff;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar .design-archives a:link, .sidebar .zen-resources a:link{
+    color: #fff;
+}
+.sidebar .design-archives a:visited, .sidebar .zen-resources a:visited{
+    color: #5a5a5a;
+}
+@media (max-width: 767px) {
+    .sidebar .wrapper {
+        display: block;
+    }
+    header h1 {
+        margin: 75px 0 45px 0;
+        display: block;
+        color: #fff;
+        font-size: 85px;
+        line-height: 95px;
+    }
+    .supporting{
+        padding: 180px 30px 60px 30px;
+    }
+}
